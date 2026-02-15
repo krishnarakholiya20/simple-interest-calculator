@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Interest Calculator</title>
+    <link rel="stylesheet" href="1.css">
+    <script src="1.js" defer></script>
+</head>
+
+<body>
+
+<div class="maindiv">
+    <h1>Simple Interest Calculator</h1>
+
+    <!-- Principal -->
+    Amount <br>
+    <input type="number" id="principal" placeholder="Enter amount"><br><br>
+
+    <!-- Rate -->
+    Rate <br>
+    <input type="range"
+           id="rate"
+           min="1"
+           max="20"
+           value="10.25"
+           step="0.25"
+           oninput="updateRate()">
+
+    <span id="rate_val">10.25</span>%<br><br>
+
+    <!-- Years -->
+    No. of Years <br>
+    <input type="number" id="years" placeholder="Enter years"><br><br>
+
+    <!-- Button -->
+    <button onclick="compute()">Compute Interest</button>
+
+    <br><br>
+    <div id="result"></div>
+</div>
+
+</body>
+</html>
